@@ -67,3 +67,8 @@ def test_create_item_rejects_duplicate_id():
 
     with pytest.raises(ValueError):
         create_item(duplicate)
+
+def test_is_low_stock_true_when_quantity_below_threshold():
+    item = Item(id=22, name="Headphones", quantity=1)
+
+    assert is_low_stock(item, threshold=2) is True

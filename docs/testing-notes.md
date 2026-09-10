@@ -42,6 +42,6 @@ In this project, `tests/test_api.py` contains tests for routes in `app/main.py`.
 
 Add your notes below.
 
--
--
--
+- Unit tests should be small, focused, and fast
+- API route tests are useful to test behavior closer to what users experience
+- Automating testing allows for caching errors early and fast
